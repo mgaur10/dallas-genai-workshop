@@ -16,11 +16,9 @@ How to set up KMS Autokey:
 module "auto-kms" {
   #  source                              = "GoogleCloudPlatform/auto-kms/google"
   source = "../../"
-  #  version                             = "~> 0.2"
-  #random_id                      = random_id.random_suffix.hex
-  billing_account                = "01660F-E4C304-5C8D2B"
-  organization_id                = "873180247571"
-  parent_folder_id               = ""                                       #"504414225755"
+  billing_account                = "XXXXX-XXXXXX-XXXXX"
+  organization_id                = "XXXXXXXXXXXX"
+  parent_folder_id               = ""                                       
   parent_is_folder               = false                                    ## set to 'false' to use org as parent
   create_new_folder              = true                                     ## set to false to use existing folder
   folder_id                      = ""                                       ## provide folder_id if using existing folder
